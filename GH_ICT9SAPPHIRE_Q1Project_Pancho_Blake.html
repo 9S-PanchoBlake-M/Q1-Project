@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project</title>
+
+<style>
+.avatar-img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+
+    main{
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+
+
+.work-details li::before{
+    content: "✓";
+    margin-right: 8px;
+    font-weight: bold;
+    color: rgb(102, 58, 40);
+}
+
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+
+    header{
+        background-color: rgb(151, 106, 88);
+        padding: 12px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(102, 58, 40);
+        background-color:rgb(219, 199, 173);
+        line-height: 1.6;
+    }
+
+
+    .logo-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 45%;
+        object-fit: cover;
+    }
+
+
+     nav a{
+        color: rgb(219, 199, 173);
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-left: 25px;
+        font-size: 0.90rem;
+        transition: opacity 0.2s ease;
+            }
+
+
+    nav a:hover{
+        opacity: 0.8;
+        color: rgb(219, 199, 173);
+    }
+
+    .button{
+        background-color: aquamarine;
+    }
+
+
+</style>
+</head>
+
+<body>
+    
+<header>
+    <nav>
+        <div class="logo-badge">
+        <img src="/Screenshot 2026-10-01 222724.png" alt="ict Logo" class="logo-img">
+        </div>
+
+
+        <ul class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact Me</a>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <img src="/1000082398-removebg-preview.png" alt="pfp" class="avatar-img">
+
+    <h1>Hello, I am <span class="highlight-name">Blake Pancho</span></h1>
+    <p class="subtitle">Aspiring Jack-Of-All-Trades</p>
+</section>
+
+
+<main class="main-content">
+
+
+<section id="about">
+    <div class="section-pill">About me!</div>
+
+
+    <p class="about-text">
+        Hello, I'm Blake, a student who can do anything in the world. <br>
+        I am passionate about a lot of things and I believe that anything is possible.
+    </p>
+</section>
+
+
+<section id="project">
+    <div class="section-pill">My Projects:</div>
+
+
+    <div class="work-card">
+    <div class="preview-box">
+
+
+    <img src="/Screenshot 2026-08-28 090454.png" alt="My Favorite Spotify Artist Project" class="preview-img">
+
+
+    <p class="preview-caption"> My Favorite Spotify Artist</p>
+    </div>
+
+
+    <div class="work-details">
+        <ul>
+        <li>HTML & CSS Projects</li>
+        <li>Spotify Artist</li>
+        <li>List, Links, and Images</li>
+        </ul>
+    </div>
+
+    <div class="work-card">
+    <div class="preview-box">
+
+
+    <img src="/GH_ICT9Section_Q1Drill2_Pancho_Blake.png" alt="My Rate a Movie Form Project" class="preview-img">
+
+
+    <p class="preview-caption"> My Rate a Movie Form
+    </p>
+
+    </div>
+
+
+    <div class="work-details">
+        <ul>
+            <li>HTML & CSS Projects</li>
+            <li>HTML Forms</li>
+            <li>Movie Recommendations</li>
+        </ul>
+
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="section-pill">Contact Me</div>
+
+
+    <div class="form-card">
+
+        <form action="#" method="post" onsubmit="event.preventDefault(); this.reset();">
+
+    <div class="form-group">
+        <label for="user-name" class="field-label"> Your Name:</label>
+    <input type="text" id="user-name" name="userName" class="text-input">
+    </div>
+
+
+    <div class="form-group">
+    <label for="user-email" class="field-label"> Your Email:</label>
+
+
+    <input type="email" id="user-email" name="userEmail" class="text-input">
+    </div>
+
+    <div class="form-group">
+        <label class="field-label"> How did you find me?</label>
+    <div class="inline-group">
+
+    <label>
+        <input type="radio" name="source" value="Facebook">
+        <span>Facebook</span>
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="source" value="google">
+        <span>Google</span>
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="source" value="friends">
+        <span>Friends</span>
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="source" value="others">
+        <span>Others</span>
+    </label>
+    </div>
+
+    <div class="form-group">
+    <label class="field-label"> Interested In:</label>
+
+    <div class="inline-group">
+    <label>
+    <input type="checkbox" name="interest" value="sports">
+    <span>Sports</span>
+    </label>
+    <br>
+    <label>
+    <input type="checkbox" name="interest" value="">Reading
+    <span>Reading</span>
+    </label>
+    <br>
+    <label>
+    <input type="checkbox" name="interest" value="movies/series">
+    <span>Movies / Series</span>
+    </label>
+    <br>
+    <label>
+    <input type="checkbox" name="interest" value="painting">
+    <span>Painting</span>
+    </label>
+    <br>
+    <label>
+    <input type="checkbox" name="interest" value="Others">
+    <span>Others</span>
+    </label>
+    </div>
+
+    <label for="rating">
+    <span>Rate my Portfolio</span>
+    </label>
+
+    <select id="rating" name="rating">\
+        <option value="">-- Select Rating --</option>
+        <option value="5">Great</option>
+        <option value="4"> Good</option>
+        <option value="3"> Ok </option>
+    </select>
+    <br>
+
+    <label for="feedback">
+        <span>Any Feedback?</span>
+    </label>
+    <br>
+    <textarea id="feedback" name="feedback" rows="4" placeholder="feedback here..."></textarea>
+
+    <br>
+    <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 | Blake Kandyse M. Pancho | 9 Sapphire </p>
+</footer>
+
+</body>
+</html>
